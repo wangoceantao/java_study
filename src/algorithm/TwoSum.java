@@ -29,7 +29,7 @@ public class TwoSum {
         }
         int i = 0;
         int j = source.length - 1;
-        while (i < j && i < source.length && j >= 0) {
+        while (i < j) {
             int currSum = source[i] + source[j];
             if (currSum == sum) {
                 Result r = new Result();
