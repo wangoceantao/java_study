@@ -1,7 +1,6 @@
 package concurrent;
 
 import java.text.ParseException;
-import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -16,10 +15,10 @@ public class WaitAndNotify {
     private static AtomicInteger count = new AtomicInteger(0);
 
     public static void main(String[] args) throws ParseException {
-//        new OddThread("odd", count, lock).start();
-//        new OddThread("even", count, lock).start();
-        String data="2016-11-20";
-        System.out.println(getDataTime(strToDate(data)));
+        new OddThread("odd", count, lock).start();
+        new OddThread("even", count, lock).start();
+//        String data="2016-11-20";
+//        System.out.println(getDataTime(strToDate(data)));
 
     }
 

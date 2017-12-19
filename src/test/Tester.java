@@ -30,6 +30,10 @@ public class Tester {
                 }
             }
         }).start();
+        char c = '马';
+        System.out.println(Integer.toBinaryString(c));
+        int left = -10;
+        System.out.println("left:" + Integer.toBinaryString(left));
 
     }
 
