@@ -1,7 +1,8 @@
 package model;
 
 
-import com.hit.wangoceantao.entity.Pair;
+
+import entity.Pair;
 
 import java.util.*;
 
