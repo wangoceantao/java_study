@@ -6,7 +6,7 @@ package algorithm;
 public class Pint1ToNDigits {
     public static void main(String[] args) {
         Pint1ToNDigits instance = new Pint1ToNDigits();
-        instance.print1ToNDigits(20);
+        instance.print1ToNDigits(4);
     }
 
     public void print1ToNDigits(int n) {

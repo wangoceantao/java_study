@@ -6,6 +6,9 @@ package algorithm;
  */
 public class MaxPQ<ENTITT extends Comparable<ENTITT>> extends BasePG<ENTITT> {
     public MaxPQ(int maxCount) {
+        if (maxCount < 0) {
+            throw new IllegalArgumentException("maxCount can not < 0");
+        }
         values = (ENTITT[]) new Comparable[maxCount + 1];
     }
 
@@ -20,6 +23,10 @@ public class MaxPQ<ENTITT extends Comparable<ENTITT>> extends BasePG<ENTITT> {
 
     public int size() {
         return N;
+    }
+
+    public ENTITT top() {
+        return values[1];
     }
 
     public ENTITT delMax() {
